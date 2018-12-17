@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'GradleExample'
+group 'Main'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 10
@@ -23,7 +23,7 @@ test {
 
 jar {
     manifest {
-        attributes  "Main-Class": "jp.ac.uryukyu.ie.e185704.Example"
+        attributes  "Main-Class": "jp.ac.uryukyu.ie.e185704.Main"
         attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
     }
 }
