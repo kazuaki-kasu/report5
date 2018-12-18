@@ -1,5 +1,12 @@
 package jp.ac.uryukyu.ie.e185704;
 
+/**
+ * common part of Enemy and Hero class
+ *
+ * String name; 敵の名前
+ * int hitPoint; 敵のHP
+ * int attack; 敵の攻撃力
+ */
 public class LivingThing {
     private String name;
     private int hitPoint;
@@ -14,6 +21,10 @@ public class LivingThing {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n",name,maxmumHP,attack);
     }
 
+    /**
+     * life and death. true = death
+     * @return bool
+     */
     public boolean isDead(){
         return  dead;
     }
